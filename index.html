@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MySite</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/aade76be10.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <input type="checkbox" id="check">
+                <div class="logo"><a href="#">PortFolio</a></div>
+                <ul>
+                    <label class="hamburger cancel" for="check"><i class="fas fa-times"></i></label>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a class="active" href="#home">Home</a></li>
+                </ul>
+                <label class="hamburger bars" for="check"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
+
+        <!--   Home section   -->
+
+        <section class="home" id="home">
+            <div class="text">
+                <div class="text-one"><h1>Hello!</h1></div>
+                <div class="text-two"><h1>I am Jana Doe,</h1></div>
+                <div class="text-three"><h1>Front-end developer.</h1></div>
+            </div>
+        </section>
+    </header>
+
+    <!--   About section   -->
+
+    <section class="about" id="about">
+        <div class="fon-img">
+            <img src="StockSnap_ENOWZ1UBKA.jpg" alt="Fon" height="270" width="270">
+        </div>
+        <div class="photo-img">
+            <img src="person.jpg" alt="My photo" width="250" height="250">
+        </div>
+        <div class="my-text">
+            <h2>About me</h2>
+            <p>
+                Hi,I'm Jana Doe. I've been a junior front-end developer for 5 months now.
+                For me, programming is not just a job, it's a hobby.
+                I'm open to new knowledge, I like to study new technologies and apply in practice.
+                <b>Skills:</b> HTML, CSS, JS, React.
+            </p>
+        </div>
+    </section>
+
+    <!--   Portfolio   -->
+
+    <section class="portfolio" id="portfolio">
+        <div class="job">
+            <h2>
+                Portfolio
+            </h2>
+        </div>
+        <!-- Project-1 -->
+        <div class="responsive">
+            <div class="gallery">
+                <div class="window window1">
+                    <div class="popup1">
+
+                            <h1>Flashcards</h1>
+                            <p>You can see the project at the following link
+                                <a href="https://flashcard.com" title="flashcard">flashcards</a> </p><br>
+                            <p>I did this project when I was studying the frontend on Hyperskill. I created<br>
+                                a web page with flip-down flash cards, learned some HTML basics and<br>
+                                learned that CSS can easily make a beautiful design.</p>
+                        <br>
+                            <button class="close-window">Close</button>
+
+                    </div>
+                </div>
+                <a target="_blank" href="project1.png">
+                    <img src="project1.png" alt="Flashcards" width="1908" height="873">
+                </a>
+                <div class="desc">
+
+                    <button class="open-window">Flashcards</button>
+
+                    <script>
+                        let flash = document.querySelector(".window1");
+                        let openWindow = document.querySelector(".open-window");
+                        let close = document.querySelector(".close-window")
+                        openWindow.onclick= function () {
+                            flash.style.display = "block";
+                        };
+                        close.onclick = function () {
+                            flash.style.display = "none";
+                        };
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        <!-- Project-1 end here-->
+        <!-- Project-2 -->
+        <div class="responsive">
+            <div class="gallery">
+                <div class="window window2">
+                    <div class="popup2">
+
+                        <h1>Virtual Piano</h1>
+                        <p>You can see the project at the following link
+                            <a href="https://VirtualPiano.com" title="Virtual Piano">Virtual Piano</a> </p><br>
+                        <p>I did this project when I was studying the frontend on Hyperskill. I created<br>
+                            a web page with Virtual Piano, learned some HTML basics and<br>
+                            learned that CSS can easily make a beautiful design.</p>
+                        <br>
+                        <button class="close-window2">Close</button>
+
+                    </div>
+                </div>
+                <a target="_blank" href="project2.png">
+                    <img src="project2.png" alt="Virtual Piano" width="250" height="170">
+                </a>
+                <div class="desc">
+                    <button class="open-window2">Virtual Piano</button>
+                    <script>
+                        let flash2 = document.querySelector(".window2");
+                        let openWindow2 = document.querySelector(".open-window2");
+                        let close2 = document.querySelector(".close-window2")
+                        openWindow2.onclick= function () {
+                            flash2.style.display = "block";
+                        };
+                        close2.onclick = function () {
+                            flash2.style.display = "none";
+                        };
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- Project-2 end here-->
+    </section>
+
+    <!--   Contacts section   -->
+
+    <section class="contacts" id="contacts">
+        <div class="myContact">
+            <h2>
+                Contacts
+            </h2>
+            <div class="mail_phone">
+                <p>
+                    You can contact me at <a href="mailto:example@mail.com">example@mail.com</a> or phone number -
+                    <a href="tel:+1234567890"> +1234567890 </a>
+                </p>
+            </div>
+            <div class="network">
+                <img src="facebook.svg" width="25" height="25" alt="facebook">
+                <img src="twitter.svg" width="25" height="25" alt="twitter">
+                <img src="instagram.svg" width="25" height="25" alt="instagram">
+                <img src="github.svg" width="25" height="25" alt="github">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="design">
+            <div class="design-one">Jana Doe</div>
+            <div class="design-two">2021</div>
+        </div>
+    </footer>
+</body>
+</html>
